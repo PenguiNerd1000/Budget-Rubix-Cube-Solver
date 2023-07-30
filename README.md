@@ -6,8 +6,8 @@ raspberry pi 2b
 etc
 
 # To-do:
-ai-image-recog:input to solve
 input-scramble.py: 
 cube-translation.py: translate rubix cube notation into mechanical output
 rubix-cube.py: keeps track of pieces 
-build it
+ai-image-recog:input to solve
+build it irl
