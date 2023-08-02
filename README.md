@@ -6,8 +6,10 @@ raspberry pi 2b
 etc
 
 # To-do:
-input-scramble.py: 
-cube-translation.py: translate rubix cube notation into mechanical output
-rubix-cube.py: keeps track of pieces 
-ai-image-recog:input to solve
-build it irl
+input: ai
+rubix cube interface
+    figure out easier way to define the relative positions of top, left, etc with which_face paramter 
+
+rubix cube solver
+rubix cube --> hardware 
+more?
