@@ -39,9 +39,13 @@ rubix_cube = [
         [y, y, y], 
     ]
 ]
+turning_side = 0
 
-def clockwise(which_face, rubix_cube):
+def clockwise(which_face, rubix_cube,turning_side):
     # define side based on which face
+    # can we integrate a command in this function to turn x side?
+    turning_side = which_face
+    turn_turning_side_clockwise() #can this run since turning_side has not been retured? or do we need to have a sperate function?
     if which_face == 0:
         top_side, right_side, bottom_side, left_side, front_side = 3, 2, 1, 4, 0
     elif which_face == 1:
@@ -73,9 +77,11 @@ def clockwise(which_face, rubix_cube):
     rubix_cube[front_side][0][0], rubix_cube[front_side][0][1], rubix_cube[front_side][0][2], rubix_cube[front_side][1][0], rubix_cube[front_side][1][2], rubix_cube[front_side][2][0],rubix_cube[front_side][2][1], rubix_cube[front_side][2][2] = front_piece3, front_piece5, front_piece8, front_piece2, front_piece7, front_piece1, front_piece4, front_piece6
     
     
-    return rubix_cube
+    return rubix_cube, turning_side
 
-def counter_clockwise(which_face, rubix_cube):
+def counter_clockwise(which_face, rubix_cube, turning_side):
+    turning_side = which_face
+    turn_turning_side_counterclockwise()
     # define side based on which face
     if which_face == 0:
         top_side, right_side, bottom_side, left_side, front_side = 3, 2, 1, 4, 0
@@ -108,4 +114,10 @@ def counter_clockwise(which_face, rubix_cube):
     rubix_cube[front_side][0][0], rubix_cube[front_side][0][1], rubix_cube[front_side][0][2], rubix_cube[front_side][1][0], rubix_cube[front_side][1][2], rubix_cube[front_side][2][0],rubix_cube[front_side][2][1], rubix_cube[front_side][2][2] = front_piece3, front_piece5, front_piece8, front_piece2, front_piece7, front_piece1, front_piece4, front_piece6
     
     
-    return rubix_cube
+    return rubix_cube, turning_side
+
+
+def turn_turning_side_clockwise(turning_side):
+    #function for turning motor clockwise
+def turn_turning_side_counterclockwise(turning_side):
+    #function for turning motor counterclockwise
