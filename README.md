@@ -3,7 +3,11 @@ Making an automatic rubix cube solver since the GAN Robot, Cube Solving Machine 
 
 # Hardware:
 raspberry pi 2b, etc
-Arduino Uno, power supply modules, lcd module, stepper motor driver, couple different stepper motors, servo motor, relays, 
+
+
+motor drivers: 
+Power: 
+Main controller: Rasp Pi 2b
 
 # To-do:
 Software: 
