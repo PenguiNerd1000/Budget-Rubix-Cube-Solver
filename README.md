@@ -9,7 +9,7 @@ raspberry pi 2b, etc
 Software: 
 - [ ] input: ai
 - [x] rubix cube interface
-- [ ] rubix cube solver
+- [ ] rubix cube solver algorithm
 - [ ] Send instructions to solve to hardware motor controllers (RASP PI GPIO)
 
 Hardware:

@@ -1,0 +1,6 @@
+freetype-py==2.4.0
+hsluv==5.0.4
+kiwisolver==1.4.5
+numpy==1.26.1
+packaging==23.2
+vispy==0.14.1
